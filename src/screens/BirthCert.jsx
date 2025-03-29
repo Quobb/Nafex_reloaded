@@ -9,7 +9,7 @@ import FeatureSection from '../components/homecomponent/FeatureSection';
 
 function BirthCert() {
   return (
-    <>
+    <div className="w-[100%] bg-white ">
       
     
     <FeatureSection />
@@ -18,7 +18,7 @@ function BirthCert() {
 
     <Footer />
     <a href="#" className="btn btn-primary btn-lg-square back-to-top"><i className="fa fa-arrow-up"></i></a>   
-  </>
+  </div>
   )
 }
 

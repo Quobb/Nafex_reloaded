@@ -21,6 +21,7 @@ import WorkStudy from '../screens/WorkStudy';
 import Passport from '../screens/Passport';
 import CompanyRegistration from '../screens/CompanyRegistration';
 import AmericanLotery from '../screens/AmericanLotery';
+import Services from '../screens/Services';
 
 
 const AppRouter = () => {
@@ -39,6 +40,7 @@ const AppRouter = () => {
         <Route path="/company-registration" element={<CompanyRegistration />} />
         <Route path="/bank-statement" element={<BankStatement />} />
         <Route path="/passport" element={<Passport />} />
+        <Route path="/service" element={<Services />} />
         <Route path="/birth-certificate" element={<BirthCertificate />} />
         <Route path="/block-account" element={<BlockAccount />} />
         <Route path="/conference-abroad" element={<ConferenceAbroad />} />

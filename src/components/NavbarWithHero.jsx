@@ -70,6 +70,7 @@ const NavbarWithHero = () => {
           {/* Navigation Links (Mobile + Desktop) */}
           <div className={`lg:flex items-center space-x-6 absolute lg:static top-16 left-0 w-full lg:w-auto lg:bg-transparent transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
             <Link to="/" className="block lg:inline-block text-burntOrange hover:text-burtBlue">Home</Link>
+            <Link to="/service" className="block lg:inline-block text-burntOrange hover:text-burtBlue ">services</Link>
             <Link to="/about" className="block lg:inline-block text-burntOrange hover:text-burtBlue ">About</Link>
 
             {/* Service Dropdown */}
@@ -82,20 +83,20 @@ const NavbarWithHero = () => {
                 className="block lg:inline-block text-burntOrange hover:text-burtBlue focus:outline-none "
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                Services
+                pages
               </button>
               {/* Dropdown */}
               {dropdownOpen && (
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-lg z-10">
                   <Link to="/passport" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Passport</Link>
-                  <Link to="/birth-certificate" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Birth Certificate</Link>
+                  {/* <Link to="/birth-certificate" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Birth Certificate</Link> */}
                   <Link to="/study-abroad" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Study Abroad</Link>
                   <Link to="/tourist-visa" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Tourist Visa</Link>
-                  <Link to="/bank-statement" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Bank Statement</Link>
-                  <Link to="/work-study-abroad" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Work & Study Abroad</Link>
-                  <Link to="/visa-procurement" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Visa Procurement</Link>
-                  <Link to="/company-registration" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Company Registration</Link>
-                  <Link to="/conference-abroad" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Conference Abroad</Link>
+                  {/* <Link to="/bank-statement" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Bank Statement</Link> */}
+                  {/* <Link to="/work-study-abroad" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Work & Study Abroad</Link> */}
+                  {/* <Link to="/visa-procurement" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Visa Procurement</Link> */}
+                  {/* <Link to="/company-registration" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Company Registration</Link> */}
+                  {/* <Link to="/conference-abroad" className="block px-4 py-2 text-burntOrange hover:bg-gray-100">Conference Abroad</Link> */}
                 </div>
               )}
             </div>

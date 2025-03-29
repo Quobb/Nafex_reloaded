@@ -14,17 +14,17 @@ const VisaSection = () => {
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold text-center mb-6">Visa Services</h1>
-      <p className="text-center text-2xl text-burtBlue mb-6">
+      <p className="text-center text-2xl text-burtBlue mb-6 w-[80%] mx-auto">
         We provide quality services for your visa application process. Our team of experts will guide you through every step, ensuring a smooth and hassle-free experience.
       </p>
-      <p className="text-center text-2xl text-burtBlue mb-6">
+      <p className="text-center text-2xl text-burtBlue mb-6 w-[80%] mx-auto">
         Explore our diverse range of visa services tailored to your needs.
       </p>
-      <div className="space-y-3">
+      <div className="space-y-3 w-[80%] mx-auto">
         {visas.map((visa, index) => (
           <div key={visa.id} className={`flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-lg ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
             <div className="w-full md:w-1/2 p-4">
-              <img src={visa.image} alt={visa.name} className="w-full h-[40vh] object-cover rounded-md" />
+              <img src={visa.image} alt={visa.name} className="w-full h-[50vh] object-cover rounded-md" />
             </div>
             <div className="w-full md:w-1/2 p-4 text-center md:text-left">
               <img src={visa.icon} alt={`${visa.name} icon`} className="w-12 h-12 mx-auto md:mx-0 mb-4" />

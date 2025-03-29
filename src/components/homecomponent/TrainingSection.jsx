@@ -10,7 +10,7 @@ const TrainingSection = () => {
     {name:'Passport',image: "/img/passort.jpg"},
     {name:'Birthcert',image: "/img/training-1.jpg"},
     {name:'Study Abroad with Scholarship',image: "/img/country-3.jpg"},
-    {name:'Tourist Visa',image: "/img/austrial-visa-2.jpg"},
+    {name:'Tourist Visa',image: "/img/austria-visa-2.jpg"},
     {name:'Bank Statement',image: "/img/banksatment.jpg"},
     {name:'Block Account Assistance',image: "/img/training-3.jpg"},
     {name:'Tourist Visa Assistance',image: "/img/block.jpg"}, 
@@ -68,7 +68,7 @@ const TrainingSection = () => {
                       <div className="training-inner">
                         <img
                           src={service.image} 
-                          className="img-fluid w-[60vh] h-[40vh] rounded" 
+                          className="img-fluid w-[60vh] h-[60vh] rounded" 
                           alt="Image"
                         />
                         <div className="training-title-name">

@@ -15,18 +15,18 @@ const StudyAbroadSection = () => {
     <div className="p-6 bg-gray-100 min-h-screen">
       <h1 className="text-4xl font-bold text-center mb-6">Study Abroad</h1>
       
-      <p className="text-lg text-gray-700 text-center mb-4">
+      <p className="text-lg text-gray-700 text-center mb-4 w-[80%] mx-auto">
         At <span className="text-burtBlue">N</span>A<span className="text-burtBlue">FE</span>X, every aspect of your study abroad programme will be extensively planned for your convenience and total satisfaction. 
         We assist prospective students to write English Proficiency and aptitude tests such as IELTS, SAT, GMAT, TOEFL, etc., which aid them in 
         gaining scholarships and easy admission to various institutions abroad.
       </p>
-      <p className="text-lg text-gray-700 text-center mb-6">
+      <p className="text-lg text-gray-700 text-center mb-6 w-[80%] mx-auto">
         We also offer affiliate services to institutions locally and internationally. 
         You can share in our <span className="font-semibold">Study Abroad</span> services by taking advantage of the enormous experience our study abroad team offers. 
         We are open to all your questions concerning your college or university options and placements.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-[80%] justify-center mx-auto">
         {countries.map((country) => (
           <div key={country.id} className="bg-white p-4 rounded-lg shadow-lg text-center">
             <img src={country.image} alt={country.name} className="w-full h-48 object-cover rounded-md" />
