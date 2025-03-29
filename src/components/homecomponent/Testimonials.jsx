@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import { motion } from 'framer-motion';
@@ -22,8 +23,9 @@ const Testimonials = () => {
   };
 
   return (
+    <div className="container-fluid training overflow-hidden ">
     <motion.div 
-      className="container-fluid testimonial overflow-hidden pb-5"
+      className="container-fluid testimonial w-[120vh] pb-5"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -97,6 +99,7 @@ const Testimonials = () => {
         </motion.div>
       </div>
     </motion.div>
+    </div>
   );
 };
 

@@ -4,17 +4,12 @@ import { motion } from 'framer-motion';
 
 function ServiceSection() {
   return (
-    <motion.div 
-      className="container-fluid service overflow-hidden pt-5 w-screen"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
-      <div className="container py-5">
+    <div className="container-fluid service overflow-hidden pt-5 w-screen">
+      <div className="container py-5 w-[90%]">
         <motion.div 
           className="section-title text-center mb-5"
           initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
           <div className="sub-style">
@@ -24,12 +19,7 @@ function ServiceSection() {
           <p className="mb-0">We provide expert guidance for various immigration services, ensuring a smooth and hassle-free process for you.</p>
         </motion.div>
         
-        <motion.div 
-          className="row g-4"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-        >
+        <div className="row g-4">
           {[
             { img: 'img/passort.jpg', title: 'Passport', description: 'Get assistance in obtaining your passport quickly and efficiently.' },
             { img: 'img/service-2.jpg', title: 'Birth Certificate', description: 'Secure your birth certificate hassle-free with our professional services.' },
@@ -41,52 +31,37 @@ function ServiceSection() {
             <motion.div 
               key={index} 
               className="col-lg-6 col-xl-4" 
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <div className="service-item">
                 <div className="service-inner">
-                  <motion.div 
-                    className="service-img"
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <img src={service.img} className="img-fluid w-100 rounded h-[40vh]" alt={service.title} />
-                  </motion.div>
+                  <div className="service-img">
+                    <img src={service.img} className="img-fluid w-[60vh] h-[50vh] rounded" alt={service.title} />
+                  </div>
                   <div className="service-title">
                     <div className="service-title-name">
-                      <motion.div 
-                        // className="bg-burntOrange text-center rounded p-3 mx-5 mb-4"
-                        initial={{ opacity: 0, y: -20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.4 }}
-                      >
+                      <div className="bg-burntOrange text-center rounded p-3 mx-5 mb-4">
                         <a href="#" className="h4 text-white mb-0">{service.title}</a>
-                      </motion.div>
+                      </div>
                       <a className="btn bg-light text-secondary rounded-pill py-3 px-5 mb-4" href="#">Explore More</a>
                     </div>
-                    <motion.div 
-                      className="service-content bg-burntOrange pb-4"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: index * 0.3 }}
-                    >
+                    <div className="service-content bg-burntOrange pb-4">
                       <a href="#"><h4 className="text-white mb-4 py-3">{service.title}</h4></a>
                       <div className="px-4">
                         <p className="mb-4">{service.description}</p>
                         <a className="btn bg-burtBlue border-secondary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
                       </div>
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

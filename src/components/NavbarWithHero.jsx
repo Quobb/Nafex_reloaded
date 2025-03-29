@@ -69,8 +69,8 @@ const NavbarWithHero = () => {
 
           {/* Navigation Links (Mobile + Desktop) */}
           <div className={`lg:flex items-center space-x-6 absolute lg:static top-16 left-0 w-full lg:w-auto lg:bg-transparent transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
-            <Link to="/" className="block lg:inline-block text-burntOrange hover:text-burtBlue px-4 py-2">Home</Link>
-            <Link to="/about" className="block lg:inline-block text-burntOrange hover:text-burtBlue px-4 py-2">About</Link>
+            <Link to="/" className="block lg:inline-block text-burntOrange hover:text-burtBlue">Home</Link>
+            <Link to="/about" className="block lg:inline-block text-burntOrange hover:text-burtBlue ">About</Link>
 
             {/* Service Dropdown */}
             <div 
@@ -79,7 +79,7 @@ const NavbarWithHero = () => {
               onMouseLeave={() => setDropdownOpen(false)}
             >
               <button
-                className="block lg:inline-block text-burntOrange hover:text-burtBlue focus:outline-none px-4 py-2"
+                className="block lg:inline-block text-burntOrange hover:text-burtBlue focus:outline-none "
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
                 Services
@@ -100,12 +100,12 @@ const NavbarWithHero = () => {
               )}
             </div>
 
-            <Link to="/contact" className="block lg:inline-block text-burntOrange hover:text-burtBlue px-4 py-2">Contact</Link>
+            <Link to="/contact" className="block lg:inline-block text-burntOrange hover:text-burtBlue ">Contact</Link>
 
             {/* Search Bar */}
-            <div className="relative mx-auto lg:mx-0 mt-3 lg:mt-0 w-full lg:w-auto px-4">
+            <div className="relative mx-auto lg:mx-0 mt-3 lg:mt-0 w-full lg:w-auto px-4 bottom-2 ">
               <input
-                className="w-full lg:w-auto form-control border border-burtBlue rounded-full py-2 px-4"
+                className="w-full lg:w-auto form-control border border-burtBlue rounded-full py-1 px-2"
                 type="text"
                 placeholder="Search..."
               />

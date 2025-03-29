@@ -17,7 +17,7 @@ import FeatureSection from '../components/homecomponent/FeatureSection';
 import CountriesWeOffer from '../components/homecomponent/CountriesWeOffer';
 function Home() {
   return (
-    <>
+    <div className="w-[100%] bg-white ">
     {/* <MainPage /> */}
     <Carousel />
     <VisaCategory />
@@ -29,7 +29,7 @@ function Home() {
     <ContactSection />
     <Footer />
     <a href="#" className="btn btn-primary btn-lg-square back-to-top"><i className="fa fa-arrow-up"></i></a>   
-    </>
+    </div>
   );
 }
 

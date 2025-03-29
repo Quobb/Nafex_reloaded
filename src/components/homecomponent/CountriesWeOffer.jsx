@@ -3,7 +3,8 @@ import React from 'react';
 
 const CountriesWeOffer = () => {
   return (
-    <div className="container-fluid country overflow-hidden py-5">
+    <div className=" overflow-hidden ">
+    <div className="container-fluid country py-5 w-[80%]">
       <div className="container">
         <div className="section-title text-center wow fadeInUp" data-wow-delay="0.1s" style={{ marginBottom: '70px' }}>
           <div className="sub-style">
@@ -82,6 +83,7 @@ const CountriesWeOffer = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

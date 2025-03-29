@@ -360,8 +360,7 @@
 }
 
 .carousel-header .carousel-control-next .carousel-control-next-icon {
-    margin-left: 0;
-    margin-right: -60px;
+
 }
 
 .carousel-header .carousel .carousel-indicators {
@@ -441,7 +440,7 @@
 
 /*** Counter Facts Start ***/
 .counter-facts {
-    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.8)), url(../img/breadcrumb.png);
+    /* background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.8)), url(../img/breadcrumb.png); */
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;

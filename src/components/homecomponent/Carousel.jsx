@@ -51,7 +51,7 @@ export default function Carousel() {
 
   return (
     <div className="relative w-full overflow-hidden ">
-      <div className="relative w-full h-[900px] flex transition-transform duration-700 ease-in-out">
+      <div className="relative w-[100%] h-[900px] flex transition-transform duration-700 ease-in-out">
         {slides.map((slide, index) => (
           <motion.div
             key={index}
@@ -65,7 +65,7 @@ export default function Carousel() {
             <img
               src={slide.image}
               alt="Carousel"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full "
             />
             <div className="relative bg-opacity-50 text-center p-6 max-w-3xl mx-auto text-white rounded-lg">
               <h4 className="text-5xl font-semibold uppercase mb-2">{slide.title}</h4>

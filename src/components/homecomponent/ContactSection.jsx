@@ -9,8 +9,9 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="container-fluid contact overflow-hidden pb-5 w-screen">
-      <div className="container py-5">
+
+    <div className="container-fluid  overflow-hidden  training w-full">
+      <div className="container py-5 w-[80%]">
         <div className="office pt-5">
           <motion.div
             className="section-title text-center mb-5"
@@ -61,6 +62,7 @@ const ContactSection = () => {
         </div>
       </div>
     </div>
+ 
   );
 };
 

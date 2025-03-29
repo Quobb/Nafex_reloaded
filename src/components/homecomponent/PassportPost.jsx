@@ -3,7 +3,7 @@ import React from "react";
 const PassportPost = () => {
   return (
     <div className="bg-gray-100 py-10 px-5 w-full flex justify-center items-center">
-      <div className="max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden md:flex">
+      <div className="max-w-4xl shadow-lg rounded-lg overflow-hidden md:flex">
         {/* Image Section */}
         <div className="md:w-1/2">
           <img

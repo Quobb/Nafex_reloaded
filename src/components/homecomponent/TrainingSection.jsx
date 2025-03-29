@@ -40,8 +40,8 @@ const TrainingSection = () => {
   const currentServices = services.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
 
   return (
-    <div className="container-fluid training overflow-hidden bg-light">
-      <div className="container py-5">
+    <div className="container-fluid training overflow-hidden ">
+      <div className="container py-5 w-[100%]">
         <div className="section-title text-center mb-5" style={fadeIn}>
           <h5 className="sub-title text-burtBlue px-3">CHECK OUR TRAINING</h5>
           <h1 className="display-5 mb-4">Get the Best Coaching Service Training with Our nafex</h1>
@@ -51,7 +51,7 @@ const TrainingSection = () => {
         {/* Horizontal Scroll Container */}
         <div className="row g-4">
           <div className="col-12">
-            <div style={{ overflowX: 'auto', padding: '20px 0' }}>
+            <div style={{ overflowX: 'auto', padding: '20px 0',scrollbarWidth: 'none', msOverflowStyle: 'none', display: 'flex', gap: '20px' }}>
               <div className="d-flex">
                 {/* Service Items with Transition and Animation */}
                 {currentServices.map((service, index) => (

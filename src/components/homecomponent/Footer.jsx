@@ -6,7 +6,7 @@ import TouristVisa from '../../screens/TouristVisa';
 
 function Footer() {
   return (
-    <footer className=" text-white py-10  w-screen">
+    <footer className=" text-white w-screen">
       <div className="container-fluid bg-burtBlue footer py-5 wow fadeIn" data-wow-delay="0.2s">
   <div className="container py-5">
     <div className="row g-5">
